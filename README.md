@@ -6,7 +6,7 @@ Commands
 sudo apt update
 sudo apt upgrade -y
 
-Install Docker
+Install Docker & Test
 ===========
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
@@ -25,7 +25,7 @@ Install NodeRed
 ===========
 
 docker run -d \
-  --name nodered \
+  --name nodered_container \
   -p 1880:1880 \
   -v nodered_data:/data \
   --restart unless-stopped \
